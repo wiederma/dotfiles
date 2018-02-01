@@ -1,0 +1,6 @@
+sudo apt-get install vim
+
+sudo apt-get install tree
+
+
+sudo apt-get install fish
