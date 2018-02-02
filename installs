@@ -2,5 +2,23 @@ sudo apt-get install vim
 
 sudo apt-get install tree
 
-
 sudo apt-get install fish
+
+sudo apt-get install tmux
+sudo apt-get install xclip
+
+sudo apt install iperf
+sudo apt install nload
+sudo apt install nmap
+sudo apt install traceroute
+
+sudo apt install ifconfig
+sudo apt install curl
+sudo apt install htop
+sudo apt install git
+
+sudo apt install borgbackup
+
+sudo apt install python2.7
+sudo apt install python3
+
