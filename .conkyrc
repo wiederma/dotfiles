@@ -1,0 +1,41 @@
+out_to_x	no
+own_window	no
+out_to_console	yes
+background	no
+max_text_width	0
+
+# Update interval in seconds
+update_interval 5.0
+
+# This is the number of times conky updates before quitting
+# set to zero to run forever
+total_run_times	0
+
+# Shortens units to a single character, Default is off
+short_units	yes
+
+if_up_strictness	address
+
+use_spacer	left
+
+override_utf8_locale	no
+
+cpu_avg_samples	2
+net_avg_samples 2
+
+TEXT
+
+# JSON for i3bar
+
+[
+#{ "full_text":"Home ${fs_free /home} Free", "color":"\#FFFFFF" },
+{ "full_text":"HDD ${fs_used /} /${fs_size /}"},
+{ "full_text":"RAM ${memperc}%","color":${if_match ${memperc}<90}"\#FFFFFF"${else}"\#FF0000"${endif}},
+{ "full_text":"BAT ${battery_time} ${battery_short}" },
+{ "full_text":"up ${uptime}" },
+{ "full_text":"CPU ${cpu}% "},#${cpubar 4}" },
+{ "full_text":"${freq_g} GHz" },
+{ "full_text":"eth ${addr eth0}"},# ${upspeed eth0} ${downspeed eth0}" },
+{ "full_text":"wlan ${addr wlan0}" },# ${upspeed wlan0} ${downspeed wlan0}" },
+{ "full_text":"${time}"}
+],
