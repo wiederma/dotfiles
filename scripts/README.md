@@ -24,7 +24,7 @@ Starting different applications with parameters using a bash script as shortcut.
 + ffire: starts firefox in private mode
 + i3exit: exit handler for i3wm
 + mws: move i3wm workspaces as a whole, script moves workspace by default to a screen located left of the current screen
-+ nau: starts nautilus explorer without desktop 
++ nau: starts nautilus explorer without desktop
 
 
 # Python

@@ -2,31 +2,34 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import logging
 import time
 import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--sleeptime', type=int, help='provide sleeptime in seconds')
-    parser.set_defaults(sleeptime=10)
+    parser.add_argument(
+        '--sleeptime',
+        default=10,
+        type=int,
+        help='provide sleeptime in seconds'
+    )
+
     args = parser.parse_args()
 
-    if args.sleeptime != None:
-        sleeptime = args.sleeptime
-
-    print(sleeptime)
-    
-    
     while True:
         try:
             print('hello')
             sys.stdout.flush()
         except Exception as e:
-            logging.warning(e)
+            print(e, file=sys.stderr)
             continue
 
-        time.sleep(sleeptime)
+        time.sleep(args.sleeptime)
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print('Shutting down', file=sys.stderr)
+    except Exception as e:
+        print(e)
