@@ -10,17 +10,20 @@ git config --global --add alias.lol "log --graph --decorate --pretty=oneline --a
 # packages to be installed
 
 ## text editor
-sudo apt-get install vim
+sudo apt install vim
 
 ## terminal
-sudo apt-get install fish
+sudo apt install fish
 
-sudo apt-get install tmux
+sudo apt install tmux
 
-sudo apt-get install xclip
+sudo apt install xclip
+
+## networking
+sudo apt install cifs-utils
 
 ## tools
-sudo apt-get install tree
+sudo apt install tree
 
 sudo apt install iperf
 
