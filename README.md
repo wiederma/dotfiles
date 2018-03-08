@@ -22,16 +22,24 @@ sudo apt install xclip
 ## networking
 sudo apt install cifs-utils
 
+sudo apt install smbclient
+
+sudo apt install tshark
+
+sudo apt install nast
+
+sudo apt install nmap
+
+sudo apt install traceroute
+
+sudo apt install magic-wormhole
+
 ## tools
 sudo apt install tree
 
 sudo apt install iperf
 
 sudo apt install nload
-
-sudo apt install nmap
-
-sudo apt install traceroute
 
 sudo apt install ifconfig
 
