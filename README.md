@@ -59,3 +59,5 @@ sudo apt install python2.7
 sudo apt install python3
 
 sudo apt install golang
+
+sudo apt install build-essential
