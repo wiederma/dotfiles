@@ -12,6 +12,8 @@ git config --global --add alias.lol "log --graph --decorate --pretty=oneline --a
 ## text editor
 sudo apt-get install vim
 
+sudo apt install atom
+
 ## terminal
 sudo apt-get install fish
 
@@ -48,3 +50,39 @@ sudo apt install python2.7
 sudo apt install python3
 
 sudo apt install golang
+
+sudo apt install gnutls-dev
+
+sudo apt install libjansson-dev
+
+sudo apt install libcurl4-gnutls-dev
+
+sudo apt install libcurl-dev
+
+sudo apt install meson
+
+sudo apt install gnutls-bin
+
+sudo apt install gnutls-cli
+
+sudo apt install vagrant
+
+sudo apt install autoconf
+
+## presentations
+sudo apt install dspdfviewer
+
+sudo apt install okular
+
+## reverse engineering / hacking
+
+sudo apt install forensics-extra
+
+sudo apt install binwalk
+
+sudo apt install nast
+
+## audio / video
+sudo apt install ffmpeg
+
+sudo apt install gmpc
